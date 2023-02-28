@@ -1,8 +1,11 @@
 <?php
-$raio = fgets(STDIN);
+$num = readline();
+$h = readline();
+$s = readline();
 
-$area = ($raio * $raio) * 3.14159;
-
-echo "X = $x\n";
+$calc= ($h * $s);
+$calc = number_format($calc, 2, ".", "");
+echo "NUMBER = $num\n";
+echo "SALARY = $calc\n";
 
 ?>
