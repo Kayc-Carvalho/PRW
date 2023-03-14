@@ -1,31 +1,25 @@
 <?php
+$x =explode(' ', fgets(STDIN));
 
-$ddd = readline();
-if($ddd==11){
-    echo "Sao Paulo\n";
-    }
-    else if($ddd==61){
-    echo "Brasilia\n";
-    }
-    else if($ddd==71){
-    echo "Salvador\n";
-    }
-    else if($ddd==21){
-    echo "Rio de Janeiro\n";
-    }
-    else if($ddd==32){
-    echo "Juiz de Fora\n";
-    }
-    else if($ddd==19){
-    echo "Campinas\n";
-    }
-    else if($ddd==27){
-    echo "Vitoria\n";
-    }
-    else if($ddd==31){
-    echo "Belo Horizonte\n";
-    }
-    else{
-        echo "DDD nao cadastrado\n";
-    }
+$A = floatval($x[0]);
+$B = floatval($x[1]);
+$C = floatval($x[2]);
+
+if(($A>=$B+$C)||($B>=$A+$C)||($C>=$A+$B)){
+echo "NAO FORMA TRIANGULO\n";
+} else if(($A**2 == $B**2+$C**2)||($B**2 == $C**2+$A**2)||($C**2 == $B**2+$A**2)){
+echo "TRIANGULO RETANGULO\n";
+} else if(($A**2 >$B**2+$C**2)||($B**2 >$A**2+$C**2)||($C**2 >$B**2+$A**2)){
+echo "TRIANGULO OBTUSANGULO\n";
+} else if(($A**2 <$B**2+$C**2)||($B**2 <$A**2+$C**2)||($C**2 <$B**2+$A**2)){
+echo "TRIANGULO ACUTANGULO\n";
+}
+if($A == $B && $B == $C & $C == $A){
+echo "TRIANGULO EQUILATERO\n";
+}
+if(($A == $B && $C != $A)||($B == $C && $A != $C)||($C == $A && $B != $A)){
+echo "TRIANGULO ISOSCELES\n";
+}
+
+
 ?>
