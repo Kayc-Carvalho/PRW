@@ -20,7 +20,8 @@ for($i = 0; $i<$b;$i++){
     } else {
         $i++;
     }
-}} 
+}
+} 
 if($cou == $b){
     echo "encaixa\n";
 } else {
