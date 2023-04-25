@@ -14,10 +14,10 @@ else if($opt == 2){
     $calc = $n1-$n2;
     }
 else if($opt == 3){
-    $calc = $n1*$n2;
+    $calc = $n1/$n2;
     }
 else if($opt == 4){
-    $calc = $n1/$n2;
+    $calc = $n1*$n2;
     }
     echo "O resultado do cálculo é: $calc";
     echo "<br>";

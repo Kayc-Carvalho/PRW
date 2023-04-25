@@ -11,13 +11,19 @@
     action => arquivo .php que será linkado
     method => tipo de requisição http GET ou POST
     -->
-    <h2>Este ano é bissexto?? </h2>
+    <h2>Boletim: </h2>
     <h3>_____________________________</h3>
-    <form action="ex4.php" method="get">
+    <form action="ex9.php" method="get">
         <div>
-            <label for="ano">Ano: </label>
-            <input type="number" name="ano">
-        </div><br>
+            <label for="nome">Nome: </label>
+            <input type="Text" name="nome">
+        </div>
+        <br>
+        <div>
+            <label for="horario">Horário: </label>
+            <input type="text" name="horario">
+        </div>
+        <br>
         <div>
             <button type="submit">Enviar</button>
         </div>
