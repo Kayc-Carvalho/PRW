@@ -11,30 +11,40 @@
     action => arquivo .php que será linkado
     method => tipo de requisição http GET ou POST
     -->
-    <h2>Boletim: </h2>
+    <h2>Diário do Campus</h2>
     <h3>_____________________________</h3>
-    <form action="ex6.php" method="get">
+    <form action="ex2.php" method="get">
         <div>
-            <label for="text">Caixa de texto genérica: </label>
+            <label for="text">Seu nome: </label>
             <input type="Text" name="text">
         </div>
         <br>
         <div>
-            <TEXTAREA NAME = "area" VALUE = "Escreva..." ROWS = "10" COLS = "20"MAXLENGTH = "140" >Caixa de texto de rolagem genérica: </TEXTAREA>
+            <p>Escreva a publicação ou artigo que deseja publicar: </p>
+            <TEXTAREA NAME = "area" VALUE = "Escreva..." ROWS = "10" COLS = "40"MAXLENGTH = "140" ></TEXTAREA>
 
         </div>
         <br>
         <div>
-            <input type="radio" name="opcao" value = "1"> 1
-            <input type="radio" name="opcao" value = "2"> 2
-            <input type="radio" name="opcao" value = "3"> 3
-            <input type="radio" name="opcao" value = "4"> 4
+            <p>Selecione os serviços de publicação: </p>
+            <input type="radio" name="opcao" value = "Artigo de opinião"> Publicar como artigo de opinião<br>
+            <input type="radio" name="opcao" value = "Artigo científico"> Publicar como artigo científico<br>
+            <input type="radio" name="opcao" value = "Notícia"> Publicar como notícia<br>
         </div>
         <br>
         <div>
-            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> opção1
-            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"> opção2
-            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op3"> opção3
+            <p>Selecione onde deseja publicar: </p>
+            <INPUT TYPE="checkbox" NAME="opt1" VALUE="Campus de Birigui"> Campus de Birigui<br>
+            <INPUT TYPE="checkbox" NAME="opt2" VALUE="Campus de Piracicaba"> Campus de Piracicaba<br>
+            <INPUT TYPE="checkbox" NAME="opt3" VALUE="Campus de Juiz de Fora"> Campus de Juiz de Fora<br>
+        </div>
+        <div>
+            <p>Selecione quando a publicação deverá ser feita:</p>
+            <select name = "quando">
+                <option value="Hoje">Ainda hoje</option>
+                <option value="Amanhã">Amanhã</OPTION>
+                <option value="Depois de amanhã">Depois de amanhã</OPTION>
+            </SELECT>
         </div>
         <br>
         <div>
